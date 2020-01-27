@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Login from './Login';
 import Store from './Store';
 import i18n from '../i18n';
+import './Main.scss'
 import {
     BrowserRouter as Router,
     Switch,
@@ -45,8 +46,8 @@ const Main = props => {
                     </Route>
                     <ConnectedPrivateRoute path="/store">
                         <header className="header">
-                            <div className="user">
-                                {i18n('hello')}, { props.user.name }
+                            <div className="user theme rtl flex justify-end">
+                                {i18n('hello')},<br /> { props.user.name }
                             </div>
                         </header>
                         <Store />

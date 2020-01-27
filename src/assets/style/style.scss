@@ -1,10 +1,17 @@
 @import './vendors.scss';
 
-html {
+body {
     padding: 0;
     margin: 0;
+    font-family: 'Assistant', sans-serif;
+    color: $app-text-color;
 }
 
 .login {
     font-size: 50px;
+}
+
+.theme {
+    color: $app-theme-color;
+    font-weight: bold;
 }
